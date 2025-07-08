@@ -8,11 +8,11 @@ def Subtract(Numbers1,Numbers2):
 
 def Mutiply(Numbers1,Numbers2):
     result = Numbers1 * Numbers2
-    print(f'{Numbers1} * {Numbers2} = {result}')    
+    print(f'{Numbers1} × {Numbers2} = {result}')    
 
 def Divide(Numbers1,Numbers2):
     result = Numbers1 / Numbers2
-    print(f'{Numbers1} / {Numbers2} = {result}')    
+    print(f'{Numbers1} ÷ {Numbers2} = {result}')    
 
 def Selection(Number1,Number2):
     print('Please select Operations - ')
