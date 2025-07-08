@@ -15,4 +15,3 @@ score2 = int(input('Enter the score for test 2: '))
 score3 = int(input('Enter the score for test 3: '))
 
 CheckPromation(score1,score2,score3)
-vjrv
