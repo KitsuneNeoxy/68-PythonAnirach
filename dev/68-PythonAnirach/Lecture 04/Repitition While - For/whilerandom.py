@@ -6,7 +6,7 @@ ntries = 1
 yourguess = -1
 
 while ntries < 7 and yourguess != mynumber:
-    message = str(ntries) + ">>"
+    message = str(ntries) + " >> "
     if (ntries == 6):
         print("Your last chance")
     yourguess = int(input(message))

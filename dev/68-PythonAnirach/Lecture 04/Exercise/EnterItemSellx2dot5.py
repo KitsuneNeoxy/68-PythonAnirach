@@ -1,19 +1,30 @@
+from prompt_toolkit.shortcuts import radiolist_dialog
+
 Total = 0
 Time = 0
 
 while True:
     Time += 1
-    ItemTwoPointFive = float(input("Enter the item's Wholesale cost: " ))
+    ItemTwoPointFive = float(input("Enter the item's Wholesale cost: "))
     Result = ItemTwoPointFive * 2.5
     Total += Result
 
-    print(f'Retail Price : {Result:.2f}')
-    print(f'Total Retail Price {Time} Times : {Total:.2f}')
-    ContinueChoice = input('Do you have anoter item? (Enter y or Y) for yes: ').lower()
+    print(f'\nRetail Price : {Result:.2f}')
+    print(f'Total Retail Price {Time} Times : {Total:.2f}\n')
+
+    # แทนที่ input ด้วยเมนูเลือก Yes/No แบบลูกศรเลื่อน
+    ContinueChoice = radiolist_dialog(
+        title="Add More?",
+        text="Do you have another item?",
+        values=[
+            ("y", "Yes"),
+            ("n", "No")
+        ]
+    ).run()
 
     if ContinueChoice != 'y':
-        print('Thank for Using!')
-        print('-----------------')
-        print(f'Retail Price : {Result:.2f}')
+        print('\nThank you for using!')
+        print('---------------------')
+        print(f'Last Retail Price : {Result:.2f}')
         print(f'Total Retail Price {Time} Times : {Total:.2f}')
         break
