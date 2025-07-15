@@ -1,5 +1,3 @@
 Rows = int(input('How many rows: '))
 Columns = int(input('How many Columns: '))
-
-for i in range(Rows):
-    print(Columns * '*')
+print(('\n'+(Columns * '*')) * Rows if Columns > 0 else None)
