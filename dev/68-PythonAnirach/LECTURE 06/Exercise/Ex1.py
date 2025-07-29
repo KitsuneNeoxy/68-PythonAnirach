@@ -10,6 +10,7 @@ def Insert_Heroes(heroes,InsHero,Position):
     Ins = str(InsHero)
     Pos = int(Position) - 1
     
+    
     H.insert(Pos,Ins)
     Display_Heroes(heroes)
 
