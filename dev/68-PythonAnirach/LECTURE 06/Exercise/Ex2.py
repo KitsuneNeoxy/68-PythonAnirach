@@ -6,7 +6,6 @@ inventory = [
 
 ]
 
-
 def Display_Inventory(inventory):
     for i in inventory:
         print(i)
