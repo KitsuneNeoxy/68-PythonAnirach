@@ -10,7 +10,6 @@ def Display_Inventory(inventory):
     for i in inventory:
         print(i)
 
-
 def update_inventory(inventory,item_name,quality_sold):
     found = False
     for i in inventory:
