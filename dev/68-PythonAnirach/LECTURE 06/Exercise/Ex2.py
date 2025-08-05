@@ -1,11 +1,3 @@
-inventory = [
-
-    ["Apple", 50, 500],
-    ["Banana", 100, 1500],
-    ["Orange", 75, 0.75]
-
-]
-
 def Display_Inventory(inventory):
     for i in inventory:
         print(i)
@@ -52,3 +44,15 @@ def add_item(inventory,item_name,quanlity,price):
     Display_Inventory(inventory)
 
 
+inventory = [
+
+    ["Apple", 50, 500],
+    ["Banana", 100, 1500],
+    ["Orange", 75, 0.75]
+
+]
+
+update_inventory(inventory ,'Banana', 20)
+calculate_total_value(inventory)
+find_most_expensive(inventory)
+add_item(inventory,'Egg',20,2.5)
